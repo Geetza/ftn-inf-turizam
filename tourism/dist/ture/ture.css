@@ -61,6 +61,9 @@ body {
   border: 1px solid black;
   padding: 5px;
 }
+.tureContainer #ture td:hover {
+  cursor: pointer;
+}
 .tureContainer #tureForma {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
