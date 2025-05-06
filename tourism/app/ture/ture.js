@@ -32,6 +32,14 @@ const pariz = new Tura(
 
 let ture = [italija, prag, pariz];
 
+const sacuvaneTure = localStorage.getItem("ture");
+if (sacuvaneTure) {
+  const parsedTure = JSON.parse(sacuvaneTure);
+  ture = parsedTure.map(
+    (ture) => new Tura(ture.naziv, ture.opis, ture.duzina, ture.tagovi)
+  );
+}
+
 function napraviRed() {
   let table = document.querySelector("#ture-body");
   table.innerHTML = "";
@@ -54,6 +62,7 @@ function napraviRed() {
 
     table.appendChild(tr);
   }
+  localStorage.setItem("ture", JSON.stringify(ture));
 }
 
 function prikaziDetalje(tura) {
@@ -97,4 +106,4 @@ function inicijalizujTure() {
   obradiFormu();
 }
 
-inicijalizujTure();
+document.addEventListener("DOMContentLoaded", inicijalizujTure);
