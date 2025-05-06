@@ -84,3 +84,45 @@ body {
     width: fit-content;
   }
   
+  .restoran-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .restoran-container table {
+    border-collapse: collapse;
+  }
+  
+  .restoran-container th,
+  .restoran-container td {
+    border: 1px solid #000;
+    padding: 8px;
+  }
+  
+  .restoran-container form {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 6px;
+    width: 280px;
+  }
+  
+  .restoran-container form input,
+  .restoran-container form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+  }
+  
+  .restoran-container form button {
+    padding: 8px 12px;
+    background-color: #3a393b;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button-div {
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+  }

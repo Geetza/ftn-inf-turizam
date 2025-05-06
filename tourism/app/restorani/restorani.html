@@ -17,7 +17,7 @@
     </ul>
   </nav>
   <br>
-
+  <div class="restoran-container">
   <table border="1">
     <thead>
       <tr>
@@ -30,6 +30,22 @@
     </tbody>
     
   </table>
+  <form id="forma-restoran">
+    <label for="naziv">Naziv:</label><br>
+    <input type="text" id="naziv" required><br>
+
+    <label for="opis">Opis:</label><br>
+    <textarea id="opis" rows="3" required></textarea><br>
+
+    <label for="Tip">Kuhinja:</label><br>
+    <input type="text" id="kuhinja" required><br>
+
+    
+    <div class="button-div">
+    <button type="submit">Dodaj</button>
+    </div>
+  </form>
+</div>
   <br>
   <div id="detalji-restorana" class="detalji-restorana">
     <p><span id="detalji-naziv"></span></p>
