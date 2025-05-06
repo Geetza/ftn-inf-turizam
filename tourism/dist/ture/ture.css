@@ -63,6 +63,8 @@ body {
 }
 .tureContainer #ture td:hover {
   cursor: pointer;
+  background-color: #333;
+  color: #f4f4f9;
 }
 .tureContainer #tureForma {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
