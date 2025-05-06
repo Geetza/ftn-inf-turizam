@@ -34,6 +34,7 @@ let ture = [italija, prag, pariz];
 
 function napraviRed() {
   let table = document.querySelector("#ture-body");
+  table.innerHTML = "";
 
   for (let i = 0; i < ture.length; i++) {
     let tr = document.createElement("tr");
@@ -46,8 +47,30 @@ function napraviRed() {
 
     tr.appendChild(naziv);
     tr.appendChild(duzina);
+
+    tr.addEventListener("click", function () {
+      prikaziDetalje(ture[i]);
+    });
+
     table.appendChild(tr);
   }
+}
+
+function prikaziDetalje(tura) {
+  let detaljiP = document.createElement("p");
+
+  detaljiP.style.padding = "10px";
+
+  detaljiP.innerHTML =
+    "Opis: " + tura.opis + "<br>" + "<br>" + "Tagovi: " + tura.tagovi;
+
+  let detaljiDiv = document.querySelector(".tureDetalji");
+
+  if (detaljiDiv.firstChild) {
+    detaljiDiv.firstChild.remove();
+  }
+
+  detaljiDiv.appendChild(detaljiP);
 }
 
 function obradiFormu() {
@@ -65,7 +88,7 @@ function obradiFormu() {
     const novaTura = new Tura(naziv, opis, duzina, tagovi);
     ture.push(novaTura);
 
-    napraviRed;
+    napraviRed();
   });
 }
 
