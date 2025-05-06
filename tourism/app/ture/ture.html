@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourApp</title>
+    <link rel="stylesheet" href="../../dist/styles.css" />
+    <link rel="stylesheet" href="../../dist/ture/ture.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="title">TourApp</h1>
+      <ul class="nav-links">
+        <li><a href="../contact/contact.html">Kontakt</a></li>
+        <li><a href="../ture/ture.html">Ture</a></li>
+        <li><a href="#">Restorani</a></li>
+      </ul>
+    </nav>
+
+    <div class="tureContainer">
+      <div id="ture">
+        <table>
+          <thead>
+            <tr>
+              <th>Naziv</th>
+              <th>Duzina</th>
+            </tr>
+          </thead>
+
+          <tbody id="ture-body"></tbody>
+        </table>
+      </div>
+
+      <div id="tureForma">
+        <form id="dodajTuru">
+          <table>
+            <tr>
+              <td>
+                <label for="nazivTure">Naziv:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="nazivTure"
+                  name="nazivTure"
+                  placeholder="Naziv ture"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="opisTure">Opis:</label></td>
+              <td>
+                <textarea
+                  id="opisTure"
+                  name="opisTure"
+                  placeholder="opisite turu u nekoliko reci"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="duzinaTure">Duzina:</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="duzinaTure"
+                  name="duzinaTure"
+                  placeholder="upisite broj kilometara"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="tagoviTure">Tagovi:</label></td>
+              <td>
+                <textarea
+                  id="tagoviTure"
+                  name="tagoviTure"
+                  placeholder="ostavite par tagova"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button id="submitBtn" name="submitBtn">Dodaj</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <div class="tureDetalji"></div>
+    <script src="ture.js"></script>
+  </body>
+</html>
