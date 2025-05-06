@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restorani - TourApp</title>
-    <link rel="stylesheet" href="../../dist/restorani/restorani.css">
-    <link rel="stylesheet" href="../../dist/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restorani - TourApp</title>
+  <link rel="stylesheet" href="../../dist/restorani/restorani.css">
+  <link rel="stylesheet" href="../../dist/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <h1 class="title">TourApp</h1>
-        <ul class="nav-links">
-            <li><a href="../contact/contact.html">Kontakt</a></li>
-            <li><a href="#">Ture</a></li>
-            <li><a href="restorani/restorani.html">Restorani</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <h1 class="title">TourApp</h1>
+    <ul class="nav-links">
+      <li><a href="../contact/contact.html">Kontakt</a></li>
+      <li><a href="../ture/ture.html">Ture</a></li>
+      <li><a href="../restorani/restorani.html">Restorani</a></li>
+    </ul>
+  </nav>
+  <br>
 
-    <br>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Naziv</th>
+        <th>Kuhinja</th>
+      </tr>
+    </thead>
+    <tbody id="restoran-body">
+     
+    </tbody>
+  </table>
 
-    <table style="display: inline-block; vertical-align: top; width: 300px; height: 200px;
-        border: 1px solid black; margin-right: 20px;
-        border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-        <thead style="height: 40px;">
-            <tr>
-                <th style="border: 1px solid black; width: 100px;">Naziv</th>
-                <th style="border: 1px solid black; width: 200px;">Kuhinja</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="height: 53px; text-align: center;">
-                <td style="border: 1px solid black;">Italijanski kutak</td>
-                <td style="border: 1px solid black;">Italijanska</td>
-            </tr>
-            <tr style="height: 53px; text-align: center;">
-                <td style="border: 1px solid black;">Azijski raj</td>
-                <td style="border: 1px solid black;">Azijska, Indonezanska</td>
-            </tr>
-            <tr style="height: 53px; text-align: center;">
-                <td style="border: 1px solid black;">Gurmanova oaza</td>
-                <td style="border: 1px solid black;">Srpska, Balkanska</td>
-            </tr>
-        </tbody>
-    </table>
+  <script src="restorani.js"></script>
 </body>
 </html>
