@@ -53,12 +53,14 @@ body {
 }
 .tureContainer #ture {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
   display: flex;
 }
 .tureContainer #ture th,
 .tureContainer #ture td {
   border: 1px solid black;
+  border-radius: 3px;
   padding: 5px;
 }
 .tureContainer #ture td:hover {
@@ -69,17 +71,24 @@ body {
 .tureContainer #tureForma {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  border-radius: 5px;
 }
 .tureContainer #tureForma td {
   padding: 10px;
 }
 .tureContainer #tureForma td #submitBtn {
   padding: 10px;
+  border-radius: 5px;
 }
 .tureContainer #tureForma td #submitBtn:hover {
   color: #f4f4f9;
   background-color: #333;
   cursor: pointer;
+}
+.tureContainer #tureForma td input,
+.tureContainer #tureForma td textarea {
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 .tureDetalji {

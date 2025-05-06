@@ -66,11 +66,13 @@ body {
 
   #ture {
     box-shadow: $box-shadow;
-    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
     display: flex;
     th,
     td {
       border: 1px solid black;
+      border-radius: 3px;
       padding: 5px;
     }
 
@@ -84,15 +86,22 @@ body {
   #tureForma {
     box-shadow: $box-shadow;
     padding: 20px;
+    border-radius: 5px;
     td {
       padding: 10px;
       #submitBtn {
         padding: 10px;
+        border-radius: 5px;
         &:hover {
           color: $background-color;
           background-color: $text-color;
           cursor: pointer;
         }
+      }
+      input,
+      textarea {
+        border: 1px solid black;
+        border-radius: 3px;
       }
     }
   }
